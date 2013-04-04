@@ -1,0 +1,98 @@
+i.play {
+  font-size:3em;
+  line-height:0.5em;
+  cursor:pointer;
+  z-index:30;
+}
+#room.ocean { position:relative; }
+#room.ocean #figure {
+  position:relative;
+  box-shadow:1px 2px 5px rgba(0,0,0,0.4);
+}
+#room.ocean #ocean {
+  width:100%;
+  background:black;
+  overflow:hidden;
+  position:relative;
+}
+#room.ocean .deep-one {
+  position:absolute;
+  background:url('../images/fish-sprite.png');
+  width:100%;
+  height:100%;
+  opacity:0;
+  z-index:1;
+}
+#room.ocean .deep-two {
+  position:absolute;
+  background:url('../images/fish-sprite.png');
+  width:100%;
+  height:100%;
+  opacity:0;
+  z-index:2;
+}
+#room.ocean #one.fish {
+  position:absolute;
+  width:18%;
+  height:15%;
+  background:url('../images/fish-sprite.png');
+  left:20%;
+  top:0;
+  background-size:306%;
+  cursor:pointer;
+}
+#room.ocean #one.fish .deep-one {
+  background-position:0px -99.88%;
+  background-size:306%;
+}
+#room.ocean #one.fish .deep-two {
+  background-position:0 -199.65%;
+  background-size:306%;
+}
+#room.ocean #one.fish.right { background-position:49% 0; }
+#room.ocean #one.fish.right .deep-one { background-position:49% -99.88%; }
+#room.ocean #one.fish.right .deep-two { background-position:49% -199.65%; }
+#room.ocean #two.fish {
+  position:absolute;
+  height:18%;
+  width:18%;
+  background:url('../images/fish-sprite.png');
+  background-position:-1% -416.1%;
+  background-size:300%;
+  left:50%;
+  top:0;
+  cursor:pointer;
+}
+#room.ocean #two.fish .deep-one {
+  background-size:300%;
+  background-position:-1% -515.6%;
+}
+#room.ocean #two.fish .deep-two {
+  background-position:-1% -615.2%;
+  background-size:300%;
+}
+#room.ocean #two.fish.right { background-position:48.9% -416.1%; }
+#room.ocean #two.fish.right .deep-one { background-position:48.9% -515.6%; }
+#room.ocean #two.fish.right .deep-two { background-position:48.9% -615.2%; }
+#room.ocean #three.fish {
+  position:absolute;
+  width:18%;
+  height:18%;
+  background:url('../images/fish-sprite.png');
+  background-position:0 -160%;
+  left:10%;
+  cursor:pointer;
+  background-size:305%;
+  top:0;
+}
+#room.ocean #three.fish .deep-one {
+  background-position:0 -148.76%;
+  background-size:305%;
+}
+#room.ocean #three.fish .deep-two {
+  background-position:0 -137.4%;
+  background-size:305%;
+}
+#room.ocean #three.fish.right { background-position:49% -160%; }
+#room.ocean #three.fish.right .deep-one { background-position:49% -148.76%; }
+#room.ocean #three.fish.right .deep-two { background-position:49% -137.4%; }

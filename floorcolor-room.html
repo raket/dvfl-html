@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-css-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />  
+	<link rel="apple-touch-icon" href="images/apple-touch-icon-precomposed.png"/>
+	<title>DVFL</title>
+	
+
+	
+	<!-- Included CSS Files -->
+	<link rel="stylesheet" href="css/foundation.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/floorcolor-room.css">
+	<link rel="stylesheet" href="css/jquery.ui.all.css">
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" href="css/ie.css">
+	<![endif]-->
+
+
+	<!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+
+	<!-- container -->
+	<!--Header-->
+	<header id="bar" class="container">
+		<div class="row">
+			<div class="three columns">
+				<a href="index.html" class="header-back nice small radius black button"><i>(</i>Tillbaka</a>		
+			</div>
+			<div class="six columns">
+				<h2>Återspeglingseffekter: Golv</h2>
+			</div>
+			<div class="three columns">
+					<a href="about-dvfl.html" title="Om Virtuella Färglabbet" class="right"><i class="big">`</i></a>
+			</div>
+		</div>
+	</header>
+	<div class="container" id="pane">
+		<div class="row">
+			<article class="eleven columns">
+				<h3>Återspeglingseffekter: Golv</h3>
+				<p>Byt färg på golvet genom att trycka på de olika alternativen jämte den stora bilden. Se hur de uppfattade vägg- och takfärgerna i rummet förändras!</p>
+			</article>
+			<div class="one columns">
+				<a href="#" class="show-more hidden"><span>more</span></a>
+			</div>
+		</div>
+		<div class="row more">
+			<article class="six columns">
+				<p>Det du ser är en återspeglingseffekt. Sådana återspeglingseffekter är viktiga för vår upplevelse av rum. De kan beskrivas som att olika ytors färger ”smittar av sig” på varandra. När ljusstrålningen studsar mellan ytorna påverkas deras uppfattade färger så att de blir mera lika.</p>
+				<h4>Några exempel:</h4>
+				<ul>
+					<li>En starkt belyst yta påverkar färgerna hos alla andra ytor i rummet.</li>
+					<li>En röd fondvägg gör att andra, blekare väggar får en rosa ton.</li> 
+					<li>En grön gräsmatta får en ljus fasad att skifta mot grönt. </li>
+					<li>Ett vitt golv eller ett vitt bord under en taklampa gör hela rummet ljusare.</li>
+				</ul>
+				<p>I ett rum där alla väggar har samma egenfärg förstärks kulörtheten genom återspegling, och hela rummet får en mer intensiv färg. I ett rum med starka och tydligt kontrasterande färger minskas kontrasterna genom återspeglingseffekten, och alla ytorna blir litet gråare än när de ses separat.</p>
+				<p>Återspeglingen sker där ytorna står mitt emot varandra, som i en korridor, och där de möts i vinkel, som mellan vägg och golv eller i hörnet mellan två väggar. För färgytor som möts kant i kant, till exempel mitt på en vägg, gäller i stället det motsatta: Konstrasten mellan färgerna förstärks, man kan säga att de ”knuffar iväg varandra”. Detta fenomen kallas simultankontrast eller induktion. </p>
+			</article>
+			<article class="six columns">
+				<div class="row">
+					<div class="five columns">
+						<img src="images/floorcolor/Bild1a.jpg" alt="" style="height:243px;" />						
+					</div>
+					<div class="seven columns">
+						<img src="images/floorcolor/Bild 1b.jpg" alt="" />
+					</div>
+				</div>
+				<em>Bilderna visar hur olika färger påverkar varandra i på en plan yta och i ett rum.</em>
+				<br /><br />
+				<h4>Mer att läsa:</h4>
+				<p>Monica Billger: <em>Colour in enclosed space: Observation of Colour Phenomena and Development of Methods for Identification of Colour Appearance in Rooms,</em> Doktorsavhandling, Chalmers tekniska högskola, Göteborg, 1999.</p>
+				<p>Monica Billger: <em>Rummet som färgernas mötesplats. I Forskare och praktiker om FÄRG LJUS RUM.</em> Red. Karin Fridell Anter. Formas, Stockholm, 2006.</p>
+				<p>Beata Stahre, Maud Hårleman och Monica Billger, <em>Colour Emotions in Larger and Smaller Scale</em> In: Proceedings for AIC 2004: Colour and Paints, Porto Alegre, Brazil, November 2-5, 2004</p>
+			</article>
+		</div>
+	</div>
+	<div class="container" id="room">
+		<div class="row">
+			<section class="ten columns">
+				<div id="figure">
+					<img src="images/floorcolor/golv-gra.jpg" />
+					<div id="floor">
+					</div>
+				</div>
+			</section>
+			<aside class="two columns">
+				<div class="diff-colors">
+					<div class="row row-colors">
+						<figure class="first color active" data-color="golv-gra"><img src="images/transperent150x96.png" alt="" title="" /></figure>
+						<figure class="second color" data-color="golv-bla"><img src="images/transperent150x96.png" alt="" title="" /></figure>
+						<figure class="third color" data-color="golv-gron"><img src="images/transperent150x96.png" alt="" title="" /></figure>
+						<figure class="fourth color" data-color="golv-gul"><img src="images/transperent150x96.png" alt="" title="" /></figure>
+						<figure class="fifth color" data-color="golv-orange"><img src="images/transperent150x96.png" alt="" title="" /></figure>
+						<figure class="sixth color" data-color="golv-rosa"><img src="images/transperent150x96.png" alt="" title="" /></figure>
+					</div>
+				</div>
+			</aside>
+		</div>
+	</div>			
+	<div id="bg-stretch"></div>
+	<!-- container -->
+
+	<!-- Included JS Files -->
+	<script src="javascripts/jquery.min.js"></script>
+	<script src="javascripts/jquery-ui-1.8.18.custom.min.js"></script>
+	<script src="javascripts/easein.js"></script>
+	<script src="javascripts/jquary-color.js"></script>
+	<script src="javascripts/jquery.ui.touch-punch.min.js"></script>
+	<script src="javascripts/modernizr.foundation.js"></script>
+	<script src="javascripts/foundation.js"></script>
+	<script src="javascripts/floorcolor-room.js"></script>
+	<script src="javascripts/app.js"></script>
+
+</body>
+</html>

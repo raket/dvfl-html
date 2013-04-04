@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-css-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />  
+	<link rel="apple-touch-icon" href="images/apple-touch-icon-precomposed.png"/>
+	<title>DVFL</title>
+  	<!--<?php 
+  	require 'lessc.inc.php';
+  	try {	
+  			lessc::ccompile('less/style.less', 'css/style.css');
+		} catch (exception $ex) {
+		    exit($ex->getMessage());
+		}
+	?>-->
+	<!-- Included CSS Files -->
+	<link rel="stylesheet" href="css/foundation.css">
+	<link rel="stylesheet" href="css/style.css">
+	
+	<link rel="apple-touch-startup-image" href="images/splash@2x.jpg" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)" />
+	<!--<script>(function(){
+	var p, l, r = window.devicePixelRatio;
+	if (navigator.platform === "iPad") {
+	    p = r === 2 ? "images/startup-tablet-portrait-retina.png" : "images/startup-tablet-portrait.png";
+	    l = r === 2 ? "images/splash@2x.jpg" : "images/splash.jpg";
+	    document.write('<link rel="apple-touch-startup-image" href="' + l + '" media="screen and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="' + p + '" media="screen and (orientation: portrait)"/>');
+	} else {
+	    p = r === 2 ? "images/splash.jpg": "images/splash.jpg"; 
+	    document.write('<link rel="apple-touch-startup-image" href="' + p + '"/>');
+	}
+	})()</script> -->
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" href="css/ie.css">
+	<![endif]-->
+
+
+	<!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!--<?php $page = 'start'; ?>-->
+</head>
+<body>
+	<!-- container -->
+	<!--Header-->
+<!--[if lt IE 9]>
+	<?php if ($_SESSION['ie'] == 1) { ?>
+	<div id="myModal" class="reveal-modal [expand, xlarge, large, medium, small]">
+	  <h2>Var god att uppdatera din webbläsare</h2>
+	  <p class="lead">Tyvärr så fungerar inte denna applikation fullt ut i Internet Explorer 8 eller äldre.</p>
+	  <p>Du kan gå in på Chromes hemsida och hämta hem den senaste versionen <a href="http://www.google.com/intl/sv/chrome/browser/" title="Chrome">här.</a></p>
+	  <a class="close-reveal-modal" href="#">&#215;</a>
+	</div>
+	<?php
+	$_SESSION['ie'] = 2; 
+} ?>
+<![endif]-->
+	<header id="bar" class="container">
+		<div class="row">
+			<div class="three columns">	
+			</div>
+			<div class="six columns">
+				<h2>Det virtuella färglaboratoriet</h2>
+			</div>
+			<div class="three columns">
+				<a href="about-dvfl.html" title="Om Virtuella Färglabbet" class="right"><i class="big">`</i></a>
+			</div>
+		</div>
+	</header>
+	<!--
+	<div class="container" id="pane">
+		<div class="row">
+			<article class="eleven columns">
+				<h3>Det virtuella färglaboratoriet</h3>
+				<p>Välkommen till Det virtuella färglaboratoriet. Här kan du ta del av forskningsresultat om färg, själv undersöka hur färger uppträder tillsammans i olika situationer och få tips om litteratur och länkar för fördjupning.</p>
+			</article>
+			<div class="one columns">
+				<a href="#" class="show-more hidden"><span>more</span></a>
+			</div>
+		</div>
+		
+		<div class="row more">
+			<div class="twelve">
+				<div class="row">
+					<article class="six columns">
+						<h3>Gruppen bakom Det Virtuella Färglaboratoriet:</h3>
+						<p>Monica Billger, Karin Fridell Anter, Beata Stahre, Maud Hårleman. <br />Kontaktperson: <a href="mailto:monica.billger@chalmers.se">monica.billger@chalmers.se</a></p>
+						<p><em>© Texter och programinnehåll: upphovsmännen enligt ovan.</em>
+						NCS - Natural Color System®© property of and used on license from Scandinavian Colour Institute (SCI), Stockholm 2008. Any commercial use of NCS®© requires a license agreement which may be signed with SCI.
+						</p>
+					</article>
+					<article class="six columns">
+						<p><p>Dr. Monica Billger, Chalmers University – Projektledare & Visualisering</p>
+								<p>Dr. Karin Fridell Anter, Chalmers University – Textredigering</p> 
+								<p>Dr. Beata Stahre, Chalmers University – Visualisering & Modellering</p>
+								<p>Dag Wästberg, WSP Group – Programmering</p>
+								<p>Dr. Mike Connell, WSP Group – Programmering</p>
+								<p>Dr. Odd Tullberg, WSP Group – VR-utvecklare</p>
+						</p>
+					</article>
+				</div>
+				<div class="row  hr">
+					<div class="eight columns">
+						<p>För att beskriva och analysera olika färgfenomen används Natural Colour System, NCS, som är svensk
+		standard för färgbeteckningar. NCS – Natural Color System®© tillhör Skandinaviska Färginstitutet AB, Stockholm 2006 och används här efter godkännande av Skandinaviska Färginstitutet AB.
+		De färgprover som visas på skärmen är i de flesta fall hämtade från det digitala färgbiblioteket NCS Palette. För färger som inte finns tillgängliga där har vi extrapolerat fram prover, som markeras med ”Not in NCS”. När man ska arbeta med färg digitalt är det naturligvis mycket viktigt att datorn är väl kalibrerad. Olika skärmar har dock olika färgåtergivning, och vilka färger vi ser på skärmen beror också på belysning och omkringliggande färgsättning. Man kan alltså aldrig räkna med att de färger som visar överensstämmer helt med de angivna NCS-koderna. Det som i detta sammanhang är viktigast är dock inte den enskilda färgens exakthet, utan i stället relationer mellan alla färger som visas tillsammans.</p>
+					</div>
+					<div class="four columns last">
+						<div class="row">
+							<div class="eight columns">
+								<img src="images/about-dvfl/formas.jpg" alt="logo-chalmers" width="" height="" />
+								<img src="images/about-dvfl/logo-chalmers.png" alt="logo-chalmers" width="" height="" />									
+							</div>
+							<div class="four columns">
+								<img src="images/about-dvfl/raket-logo.png" alt="logo-chalmers" width="" height="" style="width:85px;" />		
+							</div>
+						</div>						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	-->
+	<div class="container" id="main">
+		<div class="row">
+			<div class="four columns rooms">				
+				<article>
+					<a href="about-dvfl.html">
+				    <img src="images/about-dvfl/about-dvfl.jpg" alt="Om DVFL" width="796" height="441" />
+				    <hgroup>
+				    	<h3>Om Virtuella Färglabbet</h3>
+				    	<h4>Läs mer om DVFL, medverkande och NCS-systemet</h4>
+				    </hgroup>
+				    <img src="images/bg-highlight.png" alt="" width="320" height="261" class="hl"/>
+				    </a>
+				</article>
+				<img src="images/box-shadow.png" width="318" height="300" class="shadow">
+			</div>			
+			<div class="four columns rooms">				
+				<article>
+					<a href="diffcolor-room.html">
+				    <img src="sample/diffcolor.jpg" alt="diffcolor" width="796" height="441" />
+				    <hgroup>
+				    	<h3>Simultankontrast: Olika blir lika</h3>
+				    	<h4>Försök att få olika färger att bli lika.</h4>
+				    </hgroup>
+				    <img src="images/bg-highlight.png" alt="" width="320" height="261" class="hl"/>
+				    </a>
+				</article>
+				<img src="images/box-shadow.png" width="318" height="300" class="shadow">
+			</div>
+			<div class="four columns rooms">				
+				<article>
+					<a href="samecolor-room.html">
+				    <img src="sample/samecolor.jpg" alt="samecolor" width="796" height="441" />
+				    <hgroup>
+				    	<h3>Simultankontrast: Lika blir olika</h3>
+				    	<h4>Försök att få lika färger att bli olika.</h4>
+				    </hgroup>
+				    <img src="images/bg-highlight.png" alt="" width="320" height="261" class="hl"/>
+				</article>
+				</a>
+				<img src="images/box-shadow.png" width="318" height="300" class="shadow">
+			</div>		
+		</div>
+		<div class="row">
+			<div class="four columns rooms">				
+				<article>
+					<a href="room-rgb.html">
+					    <img src="images/room-rgb/sample-rgb.jpg" alt="photo1" width="796" height="441" />
+					    <hgroup>
+					    	<h3>RGB-rummet</h3>
+					    	<h4>Se hur rummet ändrar färg med rött och grönt ljus</h4>
+					    </hgroup>
+					    <img src="images/bg-highlight.png" alt="" width="320" height="261" class="hl"/>
+				    </a>
+				</article>
+				<img src="images/box-shadow.png" width="318" height="300" class="shadow">
+			</div>
+			<div class="four columns rooms">				
+				<article>
+					<a href="distance-room.html">
+				    <img src="images/distance-room/sample-three-houses.jpg" alt="Uppfattad färg på målade fasader" width="796" height="441" />
+				    <hgroup>
+				    	<h3>Uppfattad färg hos målade fasader</h3>
+				    	<h4>Se hur färgen påverkas på längre avstånd</h4>
+				    </hgroup>
+				    <img src="images/bg-highlight.png" alt="" width="320" height="261" class="hl"/>
+				    </a>
+				</article>
+				<img src="images/box-shadow.png" width="318" height="300" class="shadow">
+			</div>
+			
+			<div class="four columns rooms">				
+				<article>
+					<a href="inoutside-room.html">
+				    <img src="sample/photo1.jpg" alt="Färg inomhus och utomhus" width="796" height="441" />
+				    <hgroup>
+				    	<h3>Färg inomhus och utomhus</h3>
+				    	<h4>Se hur den valda färgen uppfattas på såväl fasad som inomhus</h4>
+				    </hgroup>
+				    </a>
+				</article>
+				
+				<img src="images/box-shadow.png" width="318" height="300" class="shadow">
+
+			</div>
+						
+		</div>
+		<div class="row">
+			<!--<div class="four columns rooms">				
+				<article>
+					<a href="fish-room.php">
+				    <img src="sample/water.jpg" alt="fish" width="796" height="441" />
+				    <hgroup>
+				    	<h3>Fiskar i djupet</h3>
+				    	<h4>Se hur fiskarnas färger påverkas av djupet som de beﬁnner sig på.</h4>
+				    </hgroup>
+				    <img src="images/bg-highlight.png" alt="" width="320" height="261" class="hl"/>
+				    </a>
+				</article>
+				<img src="images/box-shadow.png" width="318" height="300" class="shadow">
+			</div>-->
+			<div class="four columns rooms">				
+				<article>
+					<a href="northsouth-room.html">
+				    <img src="sample/photo1.jpg" alt="Dagsljus i norr- och söderljus" width="796" height="441" />
+				    <hgroup>
+				    	<h3>Dagsljus i norr- och söderrum</h3>
+				    	<h4>Se rumsfärgen förändras mellan norr- och söderrum</h4>
+				    </hgroup>
+				    </a>
+				</article>
+				<img src="images/box-shadow.png" width="318" height="300" class="shadow">
+			</div>
+			<div class="four columns rooms">				
+				<article>
+					<a href="floorcolor-room.html">
+				    <img src="sample/floorcolor.jpg" alt="floorcolor" width="796" height="441" />
+				    <hgroup>
+				    	<h3>Återspeglingseffekter: Golv</h3>
+				    	<h4>Ändra golvets färg och se hur rummet förändras</h4>
+				    </hgroup>
+				    <img src="images/bg-highlight.png" alt="" width="320" height="261" class="hl"/>
+				    </a>
+				</article>
+				<img src="images/box-shadow.png" width="318" height="300" class="shadow">
+			</div>	
+			
+			<div class="four columns rooms">				
+				<article>
+					<a href="yellowblue.html">
+				    <img src="sample/gulbla.jpg" alt="yellowblue" width="796" height="441" />
+				    <hgroup>
+				    	<h3>Återspeglingseffekter: Blått och gult</h3>
+				    	<h4>Ändra färg på utvalda ytor och se hur färgen ändras</h4>
+				    </hgroup>
+				    <img src="images/bg-highlight.png" alt="" width="320" height="261" class="hl"/>
+				    </a>
+				</article>
+				<img src="images/box-shadow.png" width="318" height="300" class="shadow">
+			</div>
+
+			
+		</div>
+							
+	</div>
+	<div id="bg-stretch"></div>
+	<!-- container -->
+
+
+	<!-- Included JS Files -->
+	<script src="javascripts/jquery.min.js"></script>
+	<script src="javascripts/jquery-ui-1.8.18.custom.min.js"></script>
+	<script src="javascripts/jquery.ui.touch-punch.min.js"></script>
+	<script src="javascripts/easein.js"></script>
+	<script src="javascripts/modernizr.foundation.js"></script>
+	<script src="javascripts/foundation.js"></script>
+	<script src="javascripts/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-css-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" />
+
+	<title>Virtuella Färglaboratoriet: Färg i norr- och söderljus</title>
+	<!-- Included CSS Files -->
+	<link rel="stylesheet" href="css/foundation.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/inoutside-room.css">
+	<link rel="stylesheet" href="css/jquery.ui.all.css">
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" href="css/ie.css">
+	<![endif]-->
+
+
+	<!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+	<!-- container -->
+	<!--Header-->
+	<header id="bar" class="container">
+		<div class="row">
+			<div class="three columns">
+				<a href="index.html" class="header-back nice small radius black button"><i>(</i>Tillbaka</a>		
+			</div>
+			<div class="six columns">
+				<h2>Färg inomhus och utomhus</h2>
+			</div>
+			<div class="three columns">
+					<a href="about-dvfl.html" title="Om Virtuella Färglabbet" class="right"><i class="big">`</i></a>
+			</div>
+		</div>
+	</header>
+	<div class="container" id="pane">
+		<div class="row">
+			<article class="eleven columns">
+				<h3>Färg inomhus och utomhus</h3>
+				<p>Den här stationen visar den grundläggande principen för hur färgen på ett färgprov uppträder när du målar den inomhus respektive utomhus. Dra i pilen och se hur skillnaden i färgupplevelse kan ändras mellan ute och inne!</p>
+			</article>
+			<div class="one columns">
+				<a href="#" class="show-more hidden"><span>more</span></a>
+			</div>
+		</div>
+		<div class="row more">
+			<article class="six columns">
+				<h3></h3>
+				<p>Den färg vi ser i en specifik situation – den uppfattade färgen – varierar med betraktningsförhållandena. Vi ser olika färger beroende på avstånd, ljusförhållanden, omgivande färger och en mängd andra faktorer. Även våra egna förkunskaper och förväntningar påverkar vilken färg vi ser. Det betyder att ett och samma föremål, träd eller löv har olika uppfattad färg vid olika tillfällen och i olika ljus, och ofta kan den uppfattade färgen också skilja något mellan olika människor. Den uppfattade färgen är den färg vi ser i ögonblicket.</p>
+<p>Samtidigt finns det någonting konstant hos det enstaka föremålets färg. Om vi kunde betrakta föremålet under standardiserade förhållanden, så skulle vi se dess nominella färg. Nominell färg är en konstant egenskap hos föremålet och förändras bara när själva föremålet förändras fysiskt. Nominell färg kan mätas genom visuell jämförelse med standardiserade färgprover eller med en optisk/elektronisk färgmätare där sådana jämförelser finns inprogrammerade. Begreppsparet nominell färg och uppfattad färg är centralt för förståelsen av färger och deras samverkan. Det är också viktigt i all typ av färgsättningsarbete. Det man kan välja och föreskriva är den nominella färgen, och det man får som resultat är en uppfattad färg som varierar inom vissa gränser. Den som arbetar med att välja färger måste förstå vilka uppfattade färger som blir resultatet av den valda nominella färgen och vilken nominell färg man ska välja för att åstadkomma det önskade variationsområdet för uppfattad färg. Allt detta beror på betraktningssituationen.</p>
+			</article>
+			<article class="six columns">
+				<h3>Mer att läsa:</h3>
+				<p>Karin Fridell Anter: <em>What colour is the red house. Perceived colour of painted facades.</em> Doktorsavhandling KTH Arkitektur 2000.</p>
+				<p>Karin Fridell Anter och Åke Svedmyr: <em>Färgen på huset</em>. Formas, Stockholm 2003</p>
+				<p>Maud Hårleman: <em>Daylight Influence on Colour Design: Empirical Study on Perceived Colour and Colour Experience Indoors</em>, Doktorsavhandling KTH Arkitektur, 2007</p>
+				<p>Maud Hårleman, Inga-Britt Werner och Monica Billger, <em>Significance of Colour on Room Character: Study on Dominantly Reddish and Greenish Colours in North- and South-Facing Rooms</em>, Colour: Design & Creativity (2007) 1 (1): 9, 1–15</p>
+			</article>
+		</div>
+	</div>
+	<div class="container" id="room">
+		<div class="row">
+			<section class="ten columns">
+				<div id="figure">
+					<div id="box-left" class="box left">
+						<div id="handleleft-right" class="handle-right ui-resizable-handle ui-resizable-e"></div>
+					</div>
+					<div id="box-right" class="box right">
+						<!--<div id="handleright-left" class="handle-left ui-resizable-handle ui-resizable-e"></div>-->
+					</div>
+					<img src="images/inside-outside/outside.jpg" alt="RGB_green" id="white" width="960" height="532" />
+				</div>
+			</section>
+			<aside class="two columns diff-colors">
+				<div class="row active">
+					<figure class="first color" data-color="#92D050"><img src="images/transperent75x75.png" alt="" title="" /></figure>
+					<figure class="second color" data-color="#FFC000"><img src="images/transperent75x75.png" alt="" title="" /></figure>
+					<figure class="third color" data-color="#C23A2C"><img src="images/transperent75x75.png" alt="" title="" /></figure>
+					<figure class="fourth color" data-color="#0070C0"><img src="images/transperent75x75.png" alt="" title="" /></figure>
+				</div>
+				<div class="row">
+					<figure class="fifth color" data-color="#E5E0EC"><img src="images/transperent75x75.png" alt="" title="" /></figure>
+					<figure class="sixth color" data-color="#7030A0"><img src="images/transperent75x75.png" alt="" title="" /></figure>
+					<figure class="seventh color" data-color="#FFFF00"><img src="images/transperent75x75.png" alt="" title="" /></figure>
+					<figure class="eighth color" data-color="#F29548"><img src="images/transperent75x75.png" alt="" title="" /></figure>
+				</div>
+				<div class="row">
+					<figure class="ninth color" data-color="#E33DC3"><img src="images/transperent75x75.png" alt="" title="" /></figure>
+					<figure class="tenth color " data-color="#0C6E23"><img src="images/transperent75x75.png" alt="" title="" /></figure>
+					<figure class="eleventh color" data-color="#073F14"><img src="images/transperent75x75.png" alt="" title="" /></figure>
+					<figure class="twelveth color" data-color="#00B0F0"><img src="images/transperent75x75.png" alt="" title="" /></figure>
+				</div>
+				<div class="row">
+					<figure class="thirteen color" data-color="#D7E3BC"><img src="images/transperent75x75.png" alt="" title="" /></figure>
+					<figure class="fourteen color" data-color="#6A303C"><img src="images/transperent75x75.png" alt="" title="" /></figure>
+					<figure class="fifteen color" data-color="#262626"><img src="images/transperent75x75.png" alt="" title="" /></figure>
+					<figure class="sixteen color " data-color="#5E2506"><img src="images/transperent75x75.png" alt="" title="" /></figure>
+				</div>
+			</aside>
+		</div>
+	</div>	
+	
+	<div id="bg-stretch"></div>
+	<!-- container -->
+
+
+	<!-- Included JS Files -->
+	<script src="javascripts/jquery.min.js"></script>
+	<script src="javascripts/easein.js"></script>
+	<script src="javascripts/jquery-ui-1.8.18.custom.min.js"></script>
+	<script src="javascripts/jquery.ui.touch-punch.min.js"></script>
+	<script src="javascripts/modernizr.foundation.js"></script>
+	<script src="javascripts/foundation.js"></script>
+	<script src="javascripts/inoutside-room.js"></script>
+	<script src="javascripts/app.js"></script>
+
+</body>
+</html>

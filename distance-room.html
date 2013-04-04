@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-css-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />  
+	<link rel="apple-touch-icon" href="images/apple-touch-icon-precomposed.png"/>
+	<title>DVFL</title>
+	<!-- Included CSS Files -->
+	<link rel="stylesheet" href="css/foundation.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/zoomy.css">
+	<link rel="stylesheet" href="css/distance-room.css">
+	<link rel="stylesheet" href="css/jquery.ui.all.css">
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" href="css/ie.css">
+	<![endif]-->
+
+
+	<!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+	<!-- container -->
+	<!--Header-->
+	<header id="bar" class="container">
+		<div class="row">
+			<div class="three columns">
+				<a href="index.html" class="header-back nice small radius black button"><i>(</i>Tillbaka</a>		
+			</div>
+			<div class="six columns">
+				<h2>Uppfattad färg hos målade fasader</h2>
+			</div>
+			<div class="three columns">
+					<a href="about-dvfl.html" title="Om Virtuella Färglabbet" class="right"><i class="big">`</i></a>
+			</div>
+		</div>
+	</header>
+	
+	<div class="container" id="pane">
+		<div class="row">
+			<article class="eleven columns">
+				<h3>Uppfattad färg hos målade fasader</h3>
+				<p> Välj färgskala på husraden genom att klicka på en färgburk. Klicka sedan på en fasad. Då kan du jämföra färgprovet med den färg som kommer att uppfattas på fasaden på ca 50 meters avstånd. Pröva de olika alternativen och försök förstå på vilket sätt färgprovet skiljer sig från den upplevda fasadfärgen.</p>
+			</article>
+			<div class="one columns">
+				<a href="#" class="show-more hidden"><span>more</span></a>
+			</div>
+		</div>
+		<div class="row more">
+			<div class="row">
+				<article class="six columns">
+					<h3>Dagens forskning visar att fasaden jämfört med färgprovet uppfattas som:</h3>
+					<ul>
+						<li>Ljusare och klarare</li>
+						<li>Starkare och mer intensiv</li>
+						<li>Att fasaden har en annan kulörton, då ofta kallare
+							<ul>
+								<li>Ett gulgrönt prov ger en blågrön fasad</li>
+								<li>Ett ljust neutralgrått prov ger en blåaktig grå fasad. För att få en neutralgrå fasad måste man alltså välja ett färgprov som är tydligt varmt grått.</li>
+							</ul>
+						</li>
+					</ul>
+					<p>Andra faktorer som påverkar den uppfattade färgen är ljuset som skiftar med årstid och väder, om det är dis och föroreningar i luften, samt omgivningens färger. </p>
+				</article>
+				<article class="six columns">
+					<h3>Bestämning av den nominella färgen</h3>
+					<p>Den nominella färgen hos en yta är konstant oavsett betraktningssituationen. Den kan definieras som den färg ytan skulle ha haft om den sågs under standardiserade förhållanden vad gäller belysning, avstånd omgivningsfärger etc. I praktiken kan den nominella färgen mätas in genom visuell jämförelse med standardiserade färgprover, som läggs direkt mot den aktuella ytan. Tänk på att välja en yta med jämn belysning, helst utan direkt solljus, och lägg färgproverna tätt mot ytan. Om färgproverna har kanter i vitt eller annan färg måste dessa skärmas av, t.ex. genom att man täcker dem med fingret.</p>
+	<p>För optisk/elektronisk bestämning av nominella färger finns olika typer av färgmätare som anger närmaste färgprov enligt NCS och ibland även ett interpolationsvärde. Färgmätaren placeras tätt emot ytan, belyser den med standardiserat ljus, mäter det reflekterade strålningens intensitet och spektralfördelning och jämför denna med inprogrammerade uppgifter om motsvarande värden för NCS-proverna.</p>
+				</article>
+			</div>
+			<div class="row hr">
+				<article class="six columns">
+					<div class="row">
+						<div class="five columns">
+							<img src="images/distance-room/inmatning.png" alt="Inmätning" width="785" height="869">		
+						</div>
+						<div class="seven columns">
+							<em>För att mäta in färger visuellt kan man lägga färgprover direkt på ytan för att se vilket som bästa matchar.</em>
+						</div>
+					</div>
+					
+					
+				</article>
+				<article class="six columns">
+					<h4>Mer att läsa:</h4>
+					<p>Karin Fridell Anter: <em>What colour is the red house. Perceived colour of painted facades.</em> Doktorsavhandling KTH Arkitektur 2000.</p>
+					<p>Karin Fridell Anter och Åke Svedmyr: <em>Färgen på huset.</em> Formas, Stockholm. 2003</p>
+				</article>
+			</div>
+		</div>
+	</div>
+	<div class="container diff-colors">
+		<div class="row hidden">
+			<div class="ten columns">
+					<img src="images/three_houses_green.png" class="colour"/>
+					<img src="images/three_houses_base.jpg" id="img"/>
+					<div class="overlay left" data-position="left"></div>
+					<div class="overlay center" data-position="center"></div>
+					<div class="overlay right" data-position="right"></div>
+			</div>
+			<aside class="two columns colors">
+						<figure class="first color" data-color-left="rgb(171,191,154)" data-color-center="rgb(132,149,133)" data-color-right="rgb(102,122,91)"><img src="images/distance-room/paint-bucket_three_houses_green.png" alt="" title="" style="height:100px;" /><p class="left">Målarfärgsprov för fasad 1</p><p class="center">Målarfärgsprov för fasad 2</p><p class="right">Målarfärgsprov för fasad 3</p></figure>
+						<figure class="second color" data-color-left="rgb(187,155,114)" data-color-center="rgb(142,120,97)" data-color-right="rgb(96,69,62)"><img src="images/distance-room/paint-bucket_three_houses_brown.png" alt="" title="" style="height:100px;" /><p class="left">Målarfärgsprov för fasad 1</p><p class="center">Målarfärgsprov för fasad 2</p><p class="right">Målarfärgsprov för fasad 3</p></figure>
+						<figure class="third color" data-color-left="rgb(232,216,182)" data-color-center="rgb(247,202,109)" data-color-right="rgb(213,171,113)"><img src="images/distance-room/paint-bucket_three_houses_yellow.png" alt="" title="" style="height:100px;" /><p class="left">Målarfärgsprov för fasad 1</p><p class="center">Målarfärgsprov för fasad 2</p><p class="right">Målarfärgsprov för fasad 3</p></figure>
+						<figure class="fourth color" data-color-left="rgb(182,158,152)" data-color-center="rgb(158,80,75)" data-color-right="rgb(124,52,43)"><img src="images/distance-room/paint-bucket_three_houses_red.png" alt="" title="" style="height:100px;" /><p class="left">Målarfärgsprov för fasad 1</p><p class="center">Målarfärgsprov för fasad 2</p><p class="right">Målarfärgsprov för fasad 3</p></figure>
+						<figure class="fifth color" data-color-left="rgb(177,190,197)" data-color-center="rgb(87,109,130)" data-color-right="rgb(65,77,89)"><img src="images/distance-room/paint-bucket_three_houses_blue.png" alt="" title="" style="height:100px;" /><p class="left">Målarfärgsprov för fasad 1</p><p class="center">Målarfärgsprov för fasad 2</p><p class="right">Målarfärgsprov för fasad 3</p></figure>
+						<figure class="sixth color" data-color-left="rgb(225,220,210)" data-color-center="rgb(212,209,205)" data-color-right="rgb(182,169,152)"><img src="images/distance-room/paint-bucket_three_houses_grey.png" alt="" title="" style="height:100px;" /><p class="left">Målarfärgsprov för fasad 1</p><p class="center">Målarfärgsprov för fasad 2</p><p class="right">Målarfärgsprov för fasad 3</p></figure>
+				
+			</aside>
+		</div>
+		
+	</div>
+	<div class="container samples">
+		<div class="row">
+			<div class="ten columns">
+			<ul class="coloursamples green">
+				<li class="left">
+					<div class="container">
+					<div class="white">
+						<figure></figure>
+						<figcaption>Målarfärgsprov för fasad 1</figcaption>
+					</div>				
+					</div>
+				</li>
+				<li class="center">
+					<div class="container">
+					<div class="white">
+						<figure></figure>
+						<figcaption>Målarfärgsprov för fasad 2</figcaption>
+					</div>				
+					</div>
+				</li>
+				<li class="right">
+					<div class="container">
+					<div class="white">
+						<figure></figure>
+						<figcaption>Målarfärgsprov för fasad 3</figcaption>
+					</div>					
+					</div>
+				</li>
+
+			</ul>
+			</div>
+		</div>
+	</div>
+
+			
+	<!-- container -->
+
+
+
+
+	<!-- Included JS Files -->
+	<script src="javascripts/jquery.min.js"></script>
+	<script src="javascripts/jquery-ui-1.8.18.custom.min.js"></script>
+	<script src="javascripts/jquery.transit.min.js"></script>
+	<script src="javascripts/easein.js"></script>
+	<script src="javascripts/jquary-color.js"></script>
+	<script src="javascripts/jquery.ui.touch-punch.min.js"></script>
+	<script src="javascripts/modernizr.foundation.js"></script>
+	<script src="javascripts/zoomy.min.js"></script>
+	<script src="javascripts/foundation.js"></script>
+	<script src="javascripts/distance-room.js"></script>
+	<script src="javascripts/app.js"></script>
+
+</body>
+</html>

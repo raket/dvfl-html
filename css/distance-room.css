@@ -1,0 +1,224 @@
+#zoom { width:auto; }
+.small img {
+  width:50%;
+  height:50%;
+}
+.large img {
+  width:1000px;
+  height:1000px;
+  background:white;
+}
+img.colour {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.row.hidden {
+	overflow: hidden;
+}
+.overlay {
+	top: 0;
+	left: 0;
+	width: 33%;
+	height: 1000px;
+	position: absolute;
+	z-index: 100;
+	cursor: pointer;
+}
+aside {
+	margin-top:50px;
+}
+.overlay.center {
+	left: 34%;
+}
+.overlay.right {
+	left: auto;
+	right: 0;
+}
+.diff-colors {
+	position:relative;
+}
+.diff-colors .twelve {
+	margin-top: -100px;
+}
+.container.samples {
+	position: absolute;
+	top:80%;
+	left: 0;
+	width: 98%;
+	 z-index: 10;
+}
+
+ul.coloursamples {
+	width: 100%;
+	padding: 0 6%;
+	box-sizing: border-box;
+  -webkit-transition:all 0.2s ease-out;
+  -moz-transition:all 0.2s ease-out;
+  transition:all 0.2s ease-out;
+  -webkit-perspective: 1000;
+ 
+}
+ul.coloursamples li {
+	position: relative;
+	float: left;
+	width: 33%;
+	padding: ;
+	box-sizing: border-box;
+	z-index: 10;
+	list-style: none;
+}
+ul.coloursamples li div.container {
+	position: relative;
+	z-index: 10;
+	margin: 0;
+	opacity: 0;
+	-webkit-transform: rotateX(180deg);
+    -webkit-transform-style:preserve-3d;
+  -webkit-transition:all 2s ease-in-out;
+  -webkit-transition-duration:0.3s, 0.5s;
+  -webkit-transform-origin:50% 100%;
+  -moz-transform: rotateX(180deg);
+  -moz-transform-style:preserve-3d;
+  -moz-transition:all 2s ease-in-out;
+  -moz-transition-duration:0.3s, 0.5s;
+  -moz-transform-origin:50% 50%;
+  -ms-transform: rotateX(180deg);
+  -ms-transform-style:preserve-3d;
+  -ms-transition:all 2s ease-in-out;
+  -ms-transition-duration:0.3s, 0.5s;
+  -ms-transform-origin:50% 100%;
+  -o-transform: rotateX(180deg);
+  -o-transform-style:preserve-3d;
+  -o-transition:all 2s ease-in-out;
+  -o-transition-duration:0.3s, 0.5s;
+  -o-transform-origin:50% 50%;
+  transform: rotateX(180deg);
+  transform-style:preserve-3d;
+  transition:all 2s ease-in-out;
+  transition-duration:0.3s, 0.5s;
+  transform-origin:50% 50%;
+
+}
+ul.coloursamples li.flipped {
+	display: block;
+
+}
+ul.coloursamples li img {
+	width: 100%;
+	height: auto;
+}
+ul.coloursamples li.center {
+		margin-top: 3%;
+	}
+ul.coloursamples li.right {
+		margin-top: 5%;
+	}
+
+ul.coloursamples li div.white {
+	background: #FFF;
+}
+ul.coloursamples li figure {
+	display: block;
+	background: green;
+	height: 150px;
+	box-sizing: border-box;
+	border: solid 9px #FFF;
+	border-bottom: none;
+}
+
+ul.green li.left figure {
+	background: rgb(170,194,156);
+}
+ul.green li.center figure {
+	background: rgb(130,151,135);
+}
+ul.green li.right figure {
+	background: rgb(98,124,90);
+}
+
+ul.brown li.left figure {
+	background: rgb(170,194,156);
+}
+ul.brown li.center figure {
+	background: rgb(130,151,135);
+}
+ul.brown li.right figure {
+	background: rgb(98,124,90);
+}
+
+ul.brown li.left figure {
+	background: rgb(191,158,112);
+}
+ul.brown li.center figure {
+	background: rgb(146,122,97);
+}
+ul.brown li.right figure {
+	background: rgb(98,68,58);
+}
+
+ul.yellow li.left figure {
+	background: rgb(234,218,181);
+}
+ul.yellow li.center figure {
+	background: rgb(251,206,106);
+}
+ul.yellow li.right figure {
+	background: rgb(218,174,112);
+}
+
+ul.coloursamples li figure a {
+	text-align: right;
+	width: 100%;
+	display: block;
+	padding: 5%;
+	box-sizing: border-box;
+	-webkit-transition: all 0.1s ease;
+	-moz-transition: all 0.1s ease;
+	-ms-transition: all 0.1s ease;
+	-o-transition: all 0.1s ease;
+	transition: all 0.1s ease;
+}
+
+ul.coloursamples li figure a i {
+	color: #FFF;
+	opacity: 0.5;
+	font-size: 48px;
+}
+	ul.coloursamples li figure a:hover i {
+		opacity: 1;
+		font-size: 54px;
+	}
+ul.coloursamples li figure a i {
+	margin: 0;
+}
+
+ul.coloursamples li figcaption {
+	padding: 5%;
+	color: #333;
+}
+.row-colors {
+	margin:20px auto;
+}
+.colors .color {
+	z-index:20;
+  cursor:pointer;
+  height:auto;
+  width: 100#;
+  margin-left:2.4%;
+  position:relative;
+} .colors .color:first-child {
+	margin-left:0;
+} .colors .color p {
+	display:none;
+} .colors .color.first {
+
+} .colors .color.second {
+
+} .colors .color.third {
+
+}.colors .color.fourth {
+
+} 

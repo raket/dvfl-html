@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-css-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" />
+
+	<title>Virtuella Färglaboratoriet: RGB-rummet</title>
+	<!-- Included CSS Files -->
+	<link rel="stylesheet" href="css/foundation.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/rgb-room.css">
+	<link rel="stylesheet" href="css/jquery.ui.all.css">
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" href="css/ie.css">
+	<![endif]-->
+
+
+	<!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+	<!-- container -->
+	<!--Header-->
+	<header id="bar" class="container">
+		<div class="row">
+			<div class="three columns">
+				<a href="index.html" class="header-back nice small radius black button"><i>(</i>Tillbaka</a>		
+			</div>
+			<div class="six columns">
+				<h2>RGB-rummet</h2>
+			</div>
+			<div class="three columns">
+					<a href="about-dvfl.html" title="Om Virtuella Färglabbet" class="right"><i class="big">`</i></a>
+			</div>
+		</div>
+	</header>
+	
+	<div class="container" id="pane">
+		<div class="row">
+			<article class="eleven columns">
+				<h3>RGB-rummet</h3>
+				<p>Byt färg på rummet genom att placera den röda och gröna lampan i deras socklar på kanterna under bilden! Du kan sedan dra pilen fram och tillbaka över den stora bilden för att se hur de olika färgerna påverkar upplevelsen av rutmönstret på väggarna.</p>
+			</article>
+			<div class="one columns">
+				<a href="#" class="show-more hidden"><span>More</span></a>
+			</div>
+		</div>
+		<div class="row more">
+			<article class="six columns">
+				<p>RGB står för Röd – Grön – Blå, de tre primärfärger som används vid additiv färgblandning. Mera strikt uttryckt handlar det om tre olika strålningsvåglängder som, när de blandas i olika proportioner, kan ge upphov till alla olika kulörtoner.</p>
+<p>Rummet är målat med ett mönster som förändras kraftigt när belysningen ändras. I rött ljus (R) reflekteras stålningen mer eller mindre fullständigt från olika ytor, och på vissa ytor absorberas all strålning vilket gör att vi ser ytan som i det närmaste svart. Samma sak gäller i grönt ljus (G), med den viktiga skillnaden att det nu är andra ytor som reflekterar respektive absorberar strålningen. Resultatet blir att vi ser olika väggmönster beroende på belysningen.</p>
+			</article>
+			<article class="six columns">
+				<img src="images/room-rgb/rgb.png" alt="rgb" width="200" height="198" style="float: left; margin-right: 20px;" />
+				<p><em>RGB-systemet blandar färg som ljus. Därför blir inte de resulterande färgkombinationerna desamma som de skulle ha blivit om man blandade samma färger som färgpigment. Om alla tre RGB-färgerna blandas i lämplig intensitet blir resultatet vitt.</em></p>
+				<h4>Mer att läsa:</h4>
+				<p>Beata Stahre: <em>Defining Reality in Virtual Reality: Exploring Visual Appearance and Spatial Experience Focusing on Colour</em>, Doktorsavhandling, Chalmers tekniska högskola, Göteborg, 2009.</p>
+			</article>
+		</div>		
+	</div>
+	<div class="container rgb" id="room">
+		<div class="row">
+			<section class="twelve columns">
+				<div id="figure">
+					<div id="green">
+						<div id="handlegreen-left" class="handle-left ui-resizable-handle ui-resizable-w"></div>
+						<div id="handlegreen-right" class="handle-right ui-resizable-handle ui-resizable-e"></div>
+					</div>
+					<div id="red">
+						<div id="handlered-left" class="handle-left ui-resizable-handle ui-resizable-w"></div>
+						<div id="handlered-right" class="handle-right ui-resizable-handle ui-resizable-e"></div>
+					</div>
+					<img src="images/room-rgb/RGB_white.jpg" alt="RGB_green" id="white" width="960" height="532" />
+				</div>
+			<img src="images/room-rgb/drag-lampor.png" alt="drag-lampor" width="" height="" class="message" />
+			</section>
+			
+		</div>
+		<div class="row">
+			<div class="twelve columns controls">
+				<div id="box" class="">
+					<div id="box-lower"></div>
+					<div class="hole" id="hole1"><div class="bulb red" data-color="red"></div></div>
+					<div class="hole" id="hole3"><div class="bulb green" data-color="green"></div></div>
+				</div>
+				<div class="hole" id="right"></div>
+				<div class="hole" id="left"></div>
+			</div>
+		</div>			
+	</div>
+	<div id="bg-stretch"></div>
+	<!-- container -->
+
+
+
+
+	<!-- Included JS Files -->
+	<script src="javascripts/jquery.min.js"></script>
+	<script src="javascripts/easein.js"></script>
+	<script src="javascripts/jquery-ui-1.8.18.custom.min.js"></script>
+	<script src="javascripts/jquery.ui.touch-punch.min.js"></script>
+	<script src="javascripts/modernizr.foundation.js"></script>
+	<script src="javascripts/foundation.js"></script>
+	<script src="javascripts/rgb-room.js"></script>
+	<script src="javascripts/app.js"></script>
+
+</body>
+</html>

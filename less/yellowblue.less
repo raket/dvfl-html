@@ -1,0 +1,72 @@
+@import "elements.less";
+
+#figure {
+	position:relative;
+	#floor {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+} 
+
+.diff-colors {
+	margin-top:20px;
+	.row:first-child {
+		margin-bottom:20px;
+	} .color {
+		cursor:pointer;
+		height:80%;
+		position: relative;
+		float:left;
+		display: inline-block;
+		background:#fff;
+		width:13%;
+		margin-left:4.4%;
+		-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .25), 0 2px 3px rgba(0, 0, 0, .1);
+		-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .25), 0 2px 3px rgba(0, 0, 0, .1);
+		box-shadow: 0 1px 1px rgba(0, 0, 0, .25), 0 2px 3px rgba(0, 0, 0, .1);
+	} .color:first-child {
+		margin-left:0;
+	} .first {
+		background:  url('../images/yellowblue/gul.jpg')no-repeat;
+		background-size: 100%;
+		background-position: 20% 58%;
+	} .second {
+		background:  url('../images/yellowblue/blattfond.jpg')no-repeat;
+		background-size: 100%;
+		background-position: 20% 58%;
+	} .third {
+		background:  url('../images/yellowblue/blattgolv.jpg')no-repeat;
+		background-size: 100%;
+		background-position: 20% 58%;
+	} .fourth {
+		background:  url('../images/yellowblue/blagullangsida.jpg')no-repeat;
+		background-size: 100%;
+		background-position: 20% 58%;
+	} .fifth {
+		background:  url('../images/yellowblue/gulhoger.jpg')no-repeat;
+		background-size: 100%;
+		background-position: 20% 58%;
+	} .sixth {
+		background:  url('../images/yellowblue/bla.jpg')no-repeat;
+		background-size: 100%;
+		background-position: 20% 58%;
+	} .color::before{
+		content: '';
+		position: absolute;
+		z-index: -1;
+		top: -8px;
+		right: -8px;
+		bottom: -8px;
+		left: -8px;
+		background-color: #666;
+		opacity: 0.5;		
+	} .color:hover::before {
+		opacity: 1;
+	} .color.active::before {
+		opacity: 1;
+		background-color: #333;
+	}
+}

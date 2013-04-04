@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-css-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" />
+	<title>Virtuella Färglaboratoriet: Färg i norr- och söderljus</title>
+	<!-- Included CSS Files -->
+	<link rel="stylesheet" href="css/foundation.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/northsouth-room.css">
+	<link rel="stylesheet" href="css/jquery.ui.all.css">
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" href="css/ie.css">
+	<![endif]-->
+
+
+	<!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+
+	<!-- container -->
+	<!--Header-->
+
+	<header id="bar" class="container">
+		<div class="row">
+			<div class="three columns">
+				<a href="index.html" class="header-back nice small radius black button"><i>(</i>Tillbaka</a>		
+			</div>
+			<div class="six columns">
+				<h2>Färg i norr- och söderljus</h2>
+			</div>
+			<div class="three columns">
+
+					<a href="about-dvfl.html" title="Om Virtuella Färglabbet" class="right"><i class="big">`</i></a>
+
+			</div>
+		</div>
+	</header>
+	<div class="container" id="pane">
+		<div class="row">
+			<article class="eleven columns">
+				<h3>Dagsljus i norr- och söderrum</h3>
+				<p>Här kan du se hur färgen i rummet skiljer sig mellan två rum i olika väderstreck. Både rumsfärgen och rumskaraktären förändras mellan ett söderrum med direkt solljus och ett norrum utan direkt solljus men med mycket himmelsljus. Dra i pilen och se hur färgen i rummet skiljer sig mellan norrljus och söderljus!</p>
+			</article>
+			<div class="one columns">
+				<a href="#" class="show-more hidden"><span>more</span></a>
+			</div>
+		</div>
+		<div class="row more">
+			<div class="twelve">
+				<div class="row">
+					<article class="six columns">
+						<p>Den forskning som stationen bygger på gäller en undersökning där relativt kulörsvaga färger i de två nyanserna NCS 1010 och NCS 1030 har testats. Alla väggarna i de studerade rummen var målade med samma målarfärg. Studien visar att:</p>
+						<ul>
+							<li>Ljussituationen spelar stor roll för hur rumsfärgen upplevs. Kulörtonen blir varmare i söder och kallare i norr. Färgerna drar alltså mer mot blått i norrljus än i söderljus. Se bild 1.</li>
+							<li>
+								<p>Den upplevda färgen i rummet upplevs som starkare kulört och mörkare än på ett färgprov. Detta beror på att reflektioner mellan ytor gör att färgen i rummet förstärks. För att ge jämförbar uppfattning av hur färgen kommer att se ut i rummet så måste man titta på ett mer kulörstarkt färgprov. Se bild 2.</p>
+								<img src="images/north-south/fargcirkel.png" alt="norr_south-crop" width="" height="" />
+								<p><em>Bild 1. Figuren visar hur kulörtonen på färgen förskjuts åt varsitt håll i norr och i söder.</em></p>					
+
+							</li>			
+						</ul>
+					</article>
+					<article class="six columns">
+						<ul><li>
+							<p>Nyans 1010 skiftade mest i kulörton, medan 1030 skiftade mest i nyans.</p>
+						</li>
+						<li><p>Med nyans 1030 blev gult, gulaktigt grönt och gulaktigt rosa mest kulörtstarka i solljus. Blått, blåaktigt grönt och blåaktigt rosa blev mest kulörtstarka i norrljus.</p></li>
+						<li><p>Skillnader i ett fåtal (3-5) NCS-steg resulterade i en distinkt upplevd skillnad.</p></li>
+						</ul>
+						<img src="images/north-south/Bild2.png" alt="figure" width="600" height="148" />
+						<p><em>Bild 2. Figuren visar exempel på hur färgupplevelsen ändras i ett rum jämfört med ett färgprov.</em></p>			
+					</article>
+				</div>
+			</div>
+			<div class="twelve" style="border-top: solid 1px #333; padding-top: 20px; margin-top: 20px;">
+				<div class="row">
+					<div class="six columns">
+					<h4>Mer att läsa:</h4>
+					<p>Maud Hårleman: <em>Daylight influence on colour design</em>. Doktorsavhandling Kungliga Tekniska Högskolan, Arkitektur, Stockholm 2007.</p>
+					<p>Maud Hårleman: <em>Varmt och kallt i norr och söder</em>. I Forskare och praktiker om FÄRG LJUS RUM (red. Fridell Anter). Stockholm: Formas 2006</p>
+					</div>
+					<div class="six columns">
+					<p>Beata Stahre, Maud Hårleman and Monica Billger: <em>Colour Emotions in Larger and Smaller Scale</em>. In: Proceedings for AIC 2004 Colour and Paints, Porto Alegre, Brazil, November 2–5, 2004, pp 27-30.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container" id="room">
+		<div class="row">
+			<section class="ten columns">
+				<div id="figure">
+					<div id="box-left" class="box left">
+						<div id="handleleft-right" class="handle-right ui-resizable-handle ui-resizable-e"></div>
+					</div>
+					<div id="box-right" class="box right">
+						<!--<div id="handleright-left" class="handle-left ui-resizable-handle ui-resizable-e"></div>-->
+					</div>
+					<img src="images/transperent150x96.png" alt="RGB_green" id="white" width="960" height="532" />
+				</div>
+			</section>
+			<aside class="two columns diff-colors">
+				<div class="row active">
+					<figure class="first color" data-color="#DECAC8" data-name="1010-R" data-folder="red"><img src="images/transperent75x75.png" alt="" title="" /></figure>
+					<figure class="second color" data-color="#DECAD0" data-name="1010-R20B" data-folder="red"><img src="images/transperent75x75.png" alt="" title="" /></figure>
+					<figure class="third color" data-color="#E6A8A9" data-name="1030-R" data-folder="red"><img src="images/transperent75x75.png" alt="" title="" /></figure>
+					<figure class="fourth color" data-color="#DCA7B6" data-name="1030-R20B" data-folder="red"><img src="images/transperent75x75.png" alt="" title="" /></figure>
+				</div>
+				<div class="row">
+					<figure class="fifth color" data-color="#E5DAB9" data-name="1010-Y" data-folder="yellow"><img src="images/transperent75x75.png" alt="" title="" /></figure>
+					<figure class="sixth color" data-color="#E6D6B7" data-name="1010-Y20R" data-folder="yellow"><img src="images/transperent75x75.png" alt="" title="" /></figure>
+					<figure class="seventh color" data-color="#E3CC86" data-name="1030-Y" data-folder="yellow"><img src="images/transperent75x75.png" alt="" title="" /></figure>
+					<figure class="eighth color" data-color="#F2C589" data-name="1030-Y20R" data-folder="yellow"><img src="images/transperent75x75.png" alt="" title="" /></figure>
+				</div>
+				<div class="row">
+					<figure class="ninth color" data-color="#C8DBD6" data-name="1010-B70G" data-folder="green"><img src="images/transperent75x75.png" alt="" title="" /></figure>
+					<figure class="tenth color " data-color="#CBDBCD" data-name="1010-G" data-folder="green"><img src="images/transperent75x75.png" alt="" title="" /></figure>
+					<figure class="eleventh color" data-color="#A1D1B1" data-name="1030-G" data-folder="green"><img src="images/transperent75x75.png" alt="" title="" /></figure>
+					<figure class="twelveth color" data-color="#ACCEA2" data-name="1030-G20Y" data-folder="green"><img src="images/transperent75x75.png" alt="" title="" /></figure>
+				</div>
+				<div class="row">
+					<figure class="thirteen color" data-color="#CDD4DE" data-name="1010-R80B" data-folder="blue"><img src="images/transperent75x75.png" alt="" title="" /></figure>
+					<figure class="fourteen color" data-color="#C3D4DB" data-name="1010-B" data-folder="blue"><img src="images/transperent75x75.png" alt="" title="" /></figure>
+					<figure class="fifteen color" data-color="#A7BEDE" data-name="1030-R80B" data-folder="blue"><img src="images/transperent75x75.png" alt="" title="" /></figure>
+					<figure class="sixteen color " data-color="#95C3D7" data-name="1030-B" data-folder="blue"><img src="images/transperent75x75.png" alt="" title="" /></figure>
+				</div>
+			</aside>
+		</div>
+	</div>
+	<div class="container samples">
+		<div class="row">
+			<div class="ten columns">
+			<ul class="coloursamples pink">
+				<li class="left active" data-name="1010-R05B" data-folder="red">
+					<div class="container">
+					<div class="white">
+						<figure></figure>
+						<figcaption>Rummet är målat med<br /><span>1010-R</span></figcaption>
+					</div>				
+					</div>
+				</li>
+				<li class="center1" data-name="1015-R35B" data-folder="red">
+					<div class="container">
+					<div class="white">
+						<figure></figure>
+						<figcaption>Rummet är målat med<br /><span>1010-R20B</span></figcaption>
+					</div>				
+					</div>
+				</li>
+				<li class="center2" data-name="1535-R05B" data-folder="red">
+					<div class="container">
+					<div class="white">
+						<figure></figure>
+						<figcaption>Rummet är målat med<br /><span>1030-R</span></figcaption>
+					</div>				
+					</div>
+				</li>
+				<li class="right" data-name="1535-R30B" data-folder="red">
+					<div class="container">
+					<div class="white">
+						<figure></figure>
+						<figcaption>Rummet är målat med<br /><span>1030-R20B</span></figcaption>
+					</div>					
+					</div>
+				</li>
+
+			</ul>
+			</div>
+		</div>
+	</div>	
+	
+	<div id="bg-stretch"></div>
+	<!-- container -->
+
+
+	<!-- Included JS Files -->
+	<script src="javascripts/jquery.min.js"></script>
+	<script src="javascripts/easein.js"></script>
+	<script src="javascripts/jquery-ui-1.8.18.custom.min.js"></script>
+	<script src="javascripts/jquery.ui.touch-punch.min.js"></script>
+	<script src="javascripts/modernizr.foundation.js"></script>
+	<script src="javascripts/foundation.js"></script>
+	<script src="javascripts/northsouth-room.js"></script>
+	<script src="javascripts/app.js"></script>
+
+</body>
+</html>

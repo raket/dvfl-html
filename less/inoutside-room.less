@@ -1,0 +1,97 @@
+@import "elements.less";
+/* RGB ROOM */
+#room {
+	position: relative;
+	#figure {
+		position: relative;
+		box-shadow: 1px 2px 5px rgba(0,0,0,0.4);
+	}
+	#box-left, #box-right {
+		z-index: 5;
+		position: absolute;		
+		width: 50%;
+		background-size: auto 100% !important;
+		top: 0; 
+	}
+		#box-left {
+			background: url(../images/room-rgb/RGB_green.jpg) no-repeat;
+			box-shadow: -4px 0 4px rgba(0,0,0,0.3);	
+			background-position:left;
+			left:0;
+			height: 100%;
+			z-index: 6;
+		} #box-right {
+			background: url(../images/room-rgb/RGB_red.jpg) no-repeat;
+			box-shadow: 4px 0 4px rgba(0,0,0,0.3);
+			background-position:right;
+			right:0;
+			height: 100%;
+	}  #white {
+		width: 100%;
+		height: auto;
+		display: block;
+		z-index: 1;
+	} .handle-right {
+		background: url(../images/sprajts/arrows.png);
+		position: absolute;
+		right: -30px;
+		top: 45%;
+		z-index: 10;
+		width: 59px;
+		height: 60px;
+		cursor: pointer;
+		background-position: 0px -143px;
+	} .handle-left {
+		background: url(../images/sprajts/arrows.png);
+		position: absolute;
+		left: -30px;
+		top: 45%;
+		z-index: 10;
+		width: 59px;
+		height: 60px;
+		cursor: pointer;
+		background-position: 0px -143px;
+	}
+}
+
+.diff-colors {
+	margin-top:20px;
+	.row:first-child {
+		margin-bottom:20px;
+	} .color {
+		z-index: 10;
+		cursor:pointer;
+		height:100%;
+		float:left;
+		background:#fff;
+		border-radius: 50px;
+		-moz-border-radius: 50px;
+		-webkit-border-radius: 50px;
+		width:12%;
+		margin-left:2.4%;
+		-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .25), 0 2px 3px rgba(0, 0, 0, .1);
+		-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .25), 0 2px 3px rgba(0, 0, 0, .1);
+		box-shadow: 0 1px 1px rgba(0, 0, 0, .25), 0 2px 3px rgba(0, 0, 0, .1);
+		border:5px solid #666;
+	} .color:first-child {
+		margin-left:0;
+	} .first {
+		.gradient(#ffbf00, lighten(#ffbf00, 10%), darken(#ffbf00, 5%));
+	} .second {
+		.gradient(#e06a41, lighten(#e06a41, 10%), darken(#e06a41, 5%));
+	} .third {
+		.gradient(#f8f5e3, lighten(#f8f5e3, 10%), darken(#f8f5e3, 5%));
+	} .fourth {
+		.gradient(#d0633c, lighten(#d0633c, 10%), darken(#d0633c, 5%));
+	} .fifth {
+		.gradient(#007ebf, lighten(#007ebf, 10%), darken(#007ebf, 5%));
+	} .sixth {
+		.gradient(#d8a233, lighten(#d8a233, 10%), darken(#d8a233, 5%));
+	} .seventh {
+		.gradient(#015172, lighten(#015172, 10%), darken(#015172, 5%));
+	}  .inside {
+		opacity:0;
+	} .active {
+		border:5px solid #333;
+	}
+}

@@ -1,0 +1,116 @@
+i.play {
+	font-size: 3em;
+	line-height: 0.5em;
+	cursor:pointer;
+	z-index: 30;
+}
+
+#room.ocean {
+	position: relative;
+	#figure {
+		position: relative;
+		box-shadow: 1px 2px 5px rgba(0,0,0,0.4);
+	} #ocean {	
+		width: 100%;
+		background:black;
+		overflow: hidden;
+		position:relative;
+	} .deep-one {
+		position:absolute;
+		background:url('../images/fish-sprite.png');
+		width:100%;
+		height:100%;
+		opacity:0;
+		z-index:1;
+	} .deep-two {
+		position:absolute;
+		background:url('../images/fish-sprite.png');
+		width:100%;
+		height:100%;
+		opacity:0;
+		z-index:2;
+		
+	/*Fish one */
+	} #one.fish {
+		position:absolute;
+		width: 18%;
+		height: 15%;
+		background:url('../images/fish-sprite.png');
+		left:20%;
+		top:0;
+		background-size: 306%;
+		cursor:pointer;
+		.deep-one {
+			background-position: 0px -99.88%;
+			background-size: 306%;
+		} .deep-two {
+			background-position: 0 -199.65%;
+			background-size: 306%;
+		} 
+	} #one.fish.right {
+		background-position: 49% 0;
+		.deep-one {
+			background-position: 49% -99.88%;
+		} .deep-two {
+			background-position: 49% -199.65%;
+		} 
+ 	}
+ 	
+ 	/*Fish two */
+	 #two.fish {
+		position:absolute;
+		height: 18%;
+		width: 18%;
+		background:url('../images/fish-sprite.png');
+		background-position: -1% -416.1%;
+		background-size: 300%;
+		left:50%;
+		top:0;
+		cursor:pointer;
+		.deep-one {
+			background-size: 300%;
+			background-position: -1% -515.6%;
+		} .deep-two {
+			background-position: -1% -615.2%;
+			background-size: 300%;
+		}
+	} #two.fish.right {
+		background-position: 48.9% -416.1%;
+		.deep-one {
+			background-position: 48.9% -515.6%;
+		} .deep-two {
+			background-position: 48.9% -615.2%;
+		} 
+ 	}
+ 	
+ 	
+ 	/*Fish Three */
+	 #three.fish {
+		position:absolute;
+		width: 18%;
+		height: 18%;
+		background:url('../images/fish-sprite.png');
+		background-position: 0 -160%;
+		left:10%;
+		cursor:pointer;
+		background-size: 305%;
+		top:0;
+		.deep-one {
+			background-position: 0 -148.76%;
+			background-size: 305%;
+		} .deep-two {
+			background-position: 0 -137.4%;
+			background-size: 305%;
+		}
+	} #three.fish.right {
+		background-position: 49% -160%;
+		.deep-one {
+			background-position: 49% -148.76%;
+		} .deep-two {
+			background-position: 49% -137.4%;
+		} 
+ 	}
+}
+	
+
+
